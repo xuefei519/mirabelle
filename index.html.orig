@@ -1,7 +1,13 @@
 <!DOCTYPE html>
-<html >
+<<<<<<< HEAD
+<html onload="WeixinJSBridgeReady">
   <head>
     <meta charset="utf-8">
+=======
+<html>
+    <head>
+        <meta charset="utf-8">
+>>>>>>> e78054d55b50132ab6bcbe10a456d50b395dc611
 
         <link rel="icon" href="images/nyan.png">
 
@@ -9,19 +15,26 @@
         <!--font!-->
         <link href='https://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
 
+<<<<<<< HEAD
+    <title>Mirabelle's Page</title>
+  </head>
+  <body>
+    <h1>Mirabelle</h1>
+    <img src="images/pic1.jpg" alt="My test image">
+    <h2>Who is Mirabelle?</h2>
+
+    <ul>
+      <li>a cat</li>
+      <li>a friend</li>
+      <li>a family member</li>
+    </ul>
+
+    <script src="scripts/main.js"></script>
+  </body>
+=======
         <title>Mirabelle's Page</title>
     </head>
-    <body onload="if (document.addEventListener) {
-
-                  document.addEventListener('WeixinJSBridgeReady',function(){});
-
-} else if (document.attachEvent) {
-
-                document.attachEvent('WeixinJSBridgeReady', function(){);
-
-                document.attachEvent('onWeixinJSBridgeReady', function(){});
-
-}">
+    <body>
         <div style='margin:0 auto;width:0px;height:0px;overflow:hidden;'>
             <img src="images/pic0.jpg" width='500'>
         </div>
@@ -35,4 +48,5 @@
         </ul>
         <script src="scripts/main.js"></script>
     </body>
+>>>>>>> e78054d55b50132ab6bcbe10a456d50b395dc611
 </html>
