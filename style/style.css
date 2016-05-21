@@ -4,7 +4,7 @@ html {
 
 body{
   background-color: #DED4B9;
-  width: 1000px;
+  width: 80%;
   margin: auto;
   padding: 0 20px 20px 20px;
   border-top: 5px solid #46433A;
@@ -13,10 +13,6 @@ body{
   padding: 0 20px 20px 20px;
 }
 
-
-a{
-  text-decoration: none;
-}
 
 img{
   width:700px;
@@ -28,7 +24,7 @@ h1{
   text-align: center;
   font-family: 'Abril Fatface', cursive;
   text-shadow: 1px 1px 1px #929487;
-  font-size: 3rem;
+  font-size: 6rem;
   color:#46433A;
 }
 
@@ -36,26 +32,42 @@ h2{
   font-family: 'Abril Fatface', cursive;
   text-align: center;
   color:#64B6B1;
-  font-size: 2.3rem;
-  text-shadow: 1px 1px 2px #46433A;
+  font-size: 4rem;
+  text-shadow: 1px 1px 1px #46433A;
 }
 
 h3{
   text-align: center;
   color:#46433A;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
+  font-family: 'Slabo 27px', serif;
 }
 
 h4{
   text-align: center;
   color:#46433A;
-  font-size: 1.2rem;
+  font-size: 2rem;
+  font-family: 'Slabo 27px', serif;
 }
 
-ul li{
-  font-family: 'Abril Fatface', cursive;
-  text-align: center;
-  list-style:none;
-  color:#46433A;
-  font-size: 1.8rem;
+
+@media(max-width:768px) {
+
+  h1{
+    font-size: 5rem;
+  }
+
+img{
+  width:120%;
+  margin-left: -10%;
+}
+h2{
+  font-size: 3rem;
+}
+h3{
+  font-size: 2rem;
+}
+h4{
+  font-size: 1.7rem;
+}
 }
