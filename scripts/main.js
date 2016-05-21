@@ -7,7 +7,7 @@
     document.querySelector('h1').textContent = 'Hello! Meow~'};
 }*/
 
-var myImage = document.querySelector('img');
+var myImage = document.querySelector('#slides');
 
 var imageIdx = 0;
 var numImages = 2;
