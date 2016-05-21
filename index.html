@@ -24,56 +24,5 @@
             <li>a family member</li>
         </ul>
         <script src="scripts/main.js"></script>
-        <script>
-if (typeof WeixinJSBridge == "object" && typeof WeixinJSBridge.invoke == "function") {
-    shareFriend();
-} else {
-    if (document.addEventListener) {
-        document.addEventListener("WeixinJSBridgeReady", shareFriend, false);
-    } else if (document.attachEvent) {
-        document.attachEvent("WeixinJSBridgeReady", shareFriend);
-        document.attachEvent("onWeixinJSBridgeReady", shareFriend);
-    }
-}
-
-var imgUrl = 'http://qqfood.tc.qq.com/meishio/16/4585bf7c-be04-420f-ac8a-2dba61a7561f/0';
-
-var lineLink = 'http://life.qq.com/weixin/r/lottery/13826036970196242008#wechat_redirect';
-
-var descContent = "万达狂欢节, 夺宝幸运星大抽奖活动开始啦！";
-
-var shareTitle = '万达狂欢节';
-
-var appid = 'wxc9937e3a66af6dc8';
-
-
-
-function shareFriend() {
-
-    WeixinJSBridge.invoke('sendAppMessage',{
-
-        "appid": appid,
-
-        "img_url": imgUrl,
-
-        "img_width": "640",
-
-        "img_height": "640",
-
-        "link": lineLink,
-
-        "desc": descContent,
-
-        "title": shareTitle
-
-    }, function(res) {
-
-        _report('send_msg', res.err_msg);
-
-    })
-
-}
-        </script>
-
     </body>
 </html>
