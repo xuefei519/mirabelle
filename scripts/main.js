@@ -5,7 +5,7 @@
     document.querySelector('h1').textContent = 'Mirabella'}
   else{
     document.querySelector('h1').textContent = 'Hello! Meow~'};
-}*/
+}
 
 var myImage = document.querySelector('#slides');
 
@@ -18,8 +18,7 @@ myImage.onclick = function() {
     myImage.setAttribute ('src',imagePath);
 }
 
-var myButton=document.querySelector('button');
-/*var myHeading=document.querySelector('h1');
+var myHeading=document.querySelector('h1');
 
 function setName(){
   var name=prompt('What is your name?');
@@ -37,3 +36,30 @@ if(!localStorage.getItem('name')) {
 myButton.onclick=function(){
   setName();
 }*/
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("slides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-white";
+}

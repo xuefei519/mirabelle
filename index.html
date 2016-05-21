@@ -18,7 +18,18 @@
     </head>
     <body>
         <h1>Mirabelle</h1>
-        <img id="slides" src="images/pic0.jpg" alt="Oops...">
+        <div class="pic-container">
+          <img class="slides" id="slides" src="images/pic0.jpg" alt="Oops...">
+          <img class="slides" src="images/pic1.jpg" alt="Oops...">
+
+          <a class="slide-btn btn-left" onclick="plusDivs(-1)">&#10094;</a>
+          <a class="slide-btn btn-right" onclick="plusDivs(+1)">&#10095;</a>
+          <!--<div class="dots">
+            <span class="dot" onclick="currentDiv(1)"></span>
+            <span class="dot" onclick="currentDiv(2)"></span>
+          </div>!-->
+        </div>
+
         <h2>Who is Mirabelle?</h2>
         <h3>Mirabelle is a 2-year-old female cat, probably a Russian Blue mix.
           She came to the family in February 2015, now she is a principal member of the family.</h3>
