@@ -9,13 +9,13 @@
 
 var myImage = document.querySelector('img');
 
+var imageIdx = 0;
+var numImages = 2;
 myImage.onclick = function() {
     var mySrc = myImage.getAttribute('src');
-    if(mySrc === 'images/pic1.jpg') {
-      myImage.setAttribute ('src','images/pic2.jpg');
-    } else {
-      myImage.setAttribute ('src','images/pic1.jpg');
-    }
+    imageIdx = (imageIdx + 1)%2;
+    imagePath = 'images/pic'+imageIdx+'.jpg';
+    myImage.setAttribute ('src',imagePath);
 }
 
 var myButton=document.querySelector('button');
