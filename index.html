@@ -26,6 +26,21 @@
         <script src="scripts/main.js"></script>
 
         <!-- Nasty wechat stuff -->
+        <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+        <script>
+wx.onMenuShareTimeline({
+    title: 'Mirabelle', // 分享标题
+    desc: 'Testing',
+    link: '', // 分享链接
+    imgUrl: '', // 分享图标
+    success: function () { 
+        // 用户确认分享后执行的回调函数
+    },
+    cancel: function () { 
+        // 用户取消分享后执行的回调函数
+    }
+});
+        </script>
         <script type="text/javascript">
 var not_in_mm_css = "http://res.wx.qq.com/mmbizwap/en_US/htmledition/style/page/appmsg/not_in_mm2c9cd7.css";
 var windowwx_css = "http://res.wx.qq.com/mmbizwap/en_US/htmledition/style/page/appmsg/page_mp_article_improve_winwx2c9cd7.css";
