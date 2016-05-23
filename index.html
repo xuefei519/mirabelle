@@ -8,8 +8,9 @@
 
         <link rel="icon" href="images/nyan.png">
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <link href="style/style.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link href="style/bootstrap.css" rel="stylesheet">
 
         <!--font!-->
         <link href='https://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
@@ -17,8 +18,21 @@
         <title>Mirabelle's Page</title>
     </head>
     <body>
-        <h1>Mirabelle</h1>
+      <div class="header">
+
+            <h1>Mirabelle</h1>
+            <p>A beloved indoor pet cat</p>
+
+      </div>
+      <section class="who">
+        <h2>Who is Mirabelle?</h2>
+        <h3>Mirabelle is a 2-year-old female cat, probably a Russian Blue mix.
+          She came to the family in February 2015, now she is a principal member of the family.</h3>
+        <h4>Mirabelle is curious, cautious and active, she loves to play and go out. She is dependent and needs personal space as well. She is a keeper.</h4>
+      </section>
+
         <div class="pic-container">
+          <h1>Galerie</h1>
           <img class="slides" id="slides" src="images/pic0.jpg" alt="Oops...">
           <img class="slides" src="images/pic1.jpg" alt="Oops...">
 
@@ -29,11 +43,11 @@
             <span class="dot" onclick="currentDiv(2)"></span>
           </div>!-->
         </div>
+        <footer>
+          <p>All rights reserved. Mirabelle &copy; 2016</p>
+        </footer>
 
-        <h2>Who is Mirabelle?</h2>
-        <h3>Mirabelle is a 2-year-old female cat, probably a Russian Blue mix.
-          She came to the family in February 2015, now she is a principal member of the family.</h3>
-        <h4>Mirabelle is curious, cautious and active, she loves to play and go out. She is dependent and needs personal space as well. She is a keeper.</h4>
+
         <script src="scripts/main.js"></script>
     </body>
 </html>

@@ -1,31 +1,94 @@
-html {
-  background-color: #DED4B9;
-}
 
-body{
-  background-color: #DED4B9;
-  width: 80%;
+html,body{
+  width: 100%;
   margin: auto;
-  padding: 0 20px 20px 20px;
+  /*padding: 0 20px 20px 20px;
   border-top: 5px solid #46433A;
   border-bottom: 5px solid #46433A;
 
-  padding: 0 20px 20px 20px;
+  padding: 0 20px 20px 20px;*/
+}
+.header{
+  height:600px;
+  background-image: url("../images/pic6.jpg");
+  background-size:cover;
+  background-position: center center;
+  padding-top: 50px;
+  font-family: 'Abril Fatface', cursive;
+}
+.header h1{
+  text-align: center;
+  font-family: 'Abril Fatface', cursive;
+  text-shadow: 2px 2px 2px #5A6E79;
+  font-size: 10rem;
+  color:#CFD1C6;
+  position:relative;
+}
+
+.header p{
+  font-size: 3rem;
+  color:#CFD1C6;
+  margin-top: 230px;
+  text-align: center;
+  position: relative;
+}
+
+.who{
+  background-color: #CFD1C6;
+  padding: 30px 150px 30px 150px;
+}
+
+.who h2{
+  font-family: 'Abril Fatface', cursive;
+  text-align: center;
+  color:#5A6E79;
+  font-size: 5rem;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+
+.who h3{
+  text-align: center;
+  color:#46433A;
+  font-size: 3rem;
+  font-family: 'Slabo 27px', serif;
+  margin-bottom: 80px;
+}
+
+.who h4{
+  text-align: center;
+  color:#46433A;
+  font-size: 2.5rem;
+  font-family: 'Slabo 27px', serif;
 }
 
 
-img{
-  width:700px;
-  display:block;
-  margin: auto;
-}
 .slides{
   height:500px;
 }
 .pic-container{
-  padding:0 140px 0 140px;
-  margin-bottom: 50px;
+  padding:30px 140px 80px 140px;
+  background-color: #5A6E79;
+
 }
+
+.pic-container img{
+  width:700px;
+  display:block;
+  margin: auto;
+}
+.pic-container a{
+  color:#CFD1C6;
+  text-decoration: none;
+}
+.pic-container h1{
+  font-family: 'Abril Fatface', cursive;
+  color:#CFD1C6;
+  font-size: 5rem;
+  text-align:center;
+  margin-bottom: 30px;
+}
+
 .btn-left{
   float:left!important;
 }
@@ -40,75 +103,52 @@ img{
   text-decoration: none;
 }
 
-h1{
+footer{
+  background-color: #B56C63
+
+}
+footer p{
   text-align: center;
-  font-family: 'Abril Fatface', cursive;
-  text-shadow: 1px 1px 1px #929487;
-  font-size: 6rem;
-  color:#46433A;
+  color:#CFD1C6;
+  margin:0;
 }
 
-h2{
-  font-family: 'Abril Fatface', cursive;
-  text-align: center;
-  color:#64B6B1;
-  font-size: 4rem;
-  text-shadow: 1px 1px 1px #46433A;
-}
 
-h3{
-  text-align: center;
-  color:#46433A;
-  font-size: 2.5rem;
-  font-family: 'Slabo 27px', serif;
-}
 
-h4{
-  text-align: center;
-  color:#46433A;
-  font-size: 2rem;
-  font-family: 'Slabo 27px', serif;
-}
+
 
 
 @media(max-width:768px) {
 
-  h1{
-    font-size: 5rem;
+  .header{
+    background-position: 60% center;
   }
-  .pic-container{
-    padding:0 10px 0 10px;
+  .header h1{
+    font-size: 6rem;
+  }
+  .header p{
+    font-size: 2.5rem;
+  }
+
+  .who{
+    padding: 10px 20px 30px 20px;
+  }
+
+  .who h2{
     margin-bottom: 50px;
   }
-img{
-  width:120%;
-  margin-left: -10%;
-}
-
-.slide-btn{
-  font-size:2rem;
-}
-
-.slides{
-  height:180px;
-}
-
-.dots{
-  text-align: center!important;
-}
-.dot{
-  border-radius: 50%;
-  padding:50px;
-  border: 1px solid black;
-}
-
-h2{
-  font-size: 3rem;
-}
-h3{
-  font-size: 2rem;
-}
-h4{
-  font-size: 1.7rem;
-}
+  .who h3{
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  .who h4{
+    font-size: 2rem;
+  }
+  .pic-container{
+    padding: 20px 10px 50px 10px;
+  }
+  .pic-container img{
+    width:100%;
+    height:100%;
+  }
 }
