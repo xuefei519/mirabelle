@@ -176,6 +176,14 @@ footer p{
   .who h4{
     font-size: 2rem;
   }
+
+  .family{
+    padding: 10px 20px 30px 20px;
+  }
+
+  .family .people-wrapper{
+    margin-bottom: 50px;
+  }
   .pic-container{
     padding: 20px 10px 50px 10px;
   }
