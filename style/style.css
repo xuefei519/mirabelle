@@ -115,9 +115,6 @@ footer p{
 
 
 
-
-
-
 @media(max-width:768px) {
 
   .header{
@@ -127,6 +124,7 @@ footer p{
     font-size: 6rem;
   }
   .header p{
+    margin-top: 260px;
     font-size: 2.5rem;
   }
 
