@@ -31,7 +31,72 @@
         <h4>Mirabelle is not just another cat, she is curious, cautious and active, she loves to play and go out. She is dependent and needs personal space as well. She is a keeper.</h4>
       </section>
 
-        <div class="pic-container">
+        <section class="family">
+          <h1>The family</h1>
+          <div class="row">
+            <div class="col-lg-2 col-sm-2"></div>
+            <div class="col-lg-3 col-sm-3 people-wrapper">
+              <a href=# data-target="#tsing-bio" data-toggle="modal" data-backdrop="static">
+                <img class="profile-pic" src="images/tsing.jpg" alt="Tsing">
+                <p>Tsing</p>
+              </a>
+            </div>
+            <div class="col-lg-3 col-sm-3 people-wrapper">
+              <a href=# data-target="#mirabelle-bio" data-toggle="modal" data-backdrop="static">
+                <img class="profile-pic" src="images/pic4.jpg" alt="Mirabeller">
+                <p>Mirabelle</p>
+              </a>
+            </div>
+            <div class="col-lg-3 col-sm-3 people-wrapper">
+              <a href=# data-target="#shino-bio" data-toggle="modal" data-backdrop="static">
+                <img class="profile-pic" src="images/shino.jpg" alt="Shino">
+                <p>Shino</p>
+              </a>
+              </div>
+            <div class="col-lg-2 col-sm-2"></div>
+          </div>
+        </section>
+
+        <div class="modal fade" id="tsing-bio" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+          <div class="modal-dialog work-modal">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" id="close" class="close" data-dismiss="modal" >&times;</button>
+                <p class="modal-title">Tsing Gu</p>
+              </div>
+              <div class="modal-body">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="mirabelle-bio" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+          <div class="modal-dialog work-modal">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" id="close" class="close" data-dismiss="modal" >&times;</button>
+                <p class="modal-title">Mirabelle</p>
+              </div>
+              <div class="modal-body">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="shino-bio" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+          <div class="modal-dialog work-modal">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" id="close" class="close" data-dismiss="modal" >&times;</button>
+                <p class="modal-title">Shino Shi</p>
+              </div>
+              <div class="modal-body">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section class="pic-container">
           <h1>Galerie</h1>
           <img class="slides" id="slides" src="images/pic0.jpg" alt="Oops...">
           <img class="slides" src="images/pic1.jpg" alt="Oops...">
@@ -42,12 +107,15 @@
             <span class="dot" onclick="currentDiv(1)"></span>
             <span class="dot" onclick="currentDiv(2)"></span>
           </div>!-->
-        </div>
+        </section>
         <footer>
           <p>All rights reserved. Mirabelle &copy; 2016</p>
         </footer>
 
-
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
         <script src="scripts/main.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="scripts/bootstrap.min.js"></script>
     </body>
 </html>
