@@ -65,6 +65,7 @@ html,body{
 .family{
   background-color: #B56C63;
   padding:30px 150px 100px 150px;
+  height:550px;
 }
 .family h1{
   text-align: center;
@@ -84,10 +85,33 @@ html,body{
 .people-wrapper a:hover {
   text-decoration: none;
   }
+.family .people-wrapper .profile-pic:hover{
+  height:200px;
+}
 
-.family .people-wrapper .profile-pic{
+ .family .people-wrapper .profile-pic{
   border-radius: 50%;
   height:150px;
+
+  -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+     -ms-transition: all 0.5s ease;
+         transition: all 0.5s ease;
+}
+
+.modal .modal-dialog .modal-content{
+  background-color: #CFD1C6;
+}
+.modal-body .profile-pic{
+ border-radius: 50%;
+ height:200px;
+}
+
+.modal-body p{
+  font-family: 'Slabo 27px', serif;
+  font-size: 2rem;
+  color:#5A6E79;
 }
 .family .people-wrapper p{
   text-align: center;
@@ -96,7 +120,9 @@ html,body{
   color:#ADB3B1;
   text-shadow: 1px 1px 1px #5A6E79;
 }
-
+.modal-body{
+  text-align: center;
+}
 .slides{
   height:500px;
 }
@@ -179,6 +205,7 @@ footer p{
 
   .family{
     padding: 10px 20px 30px 20px;
+    height:900px;
   }
 
   .family .people-wrapper{
