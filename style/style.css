@@ -99,6 +99,9 @@ html,body{
      -ms-transition: all 0.5s ease;
          transition: all 0.5s ease;
 }
+.modal .modal-dialog {
+  width:75%;
+}
 
 .modal .modal-dialog .modal-content{
   background-color: #CFD1C6;
@@ -110,8 +113,13 @@ html,body{
 
 .modal-body p{
   font-family: 'Slabo 27px', serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color:#5A6E79;
+}
+.modal-body .bio-data{
+  font-size: 2rem;
+  text-align: left;
+  margin: 20px;
 }
 .family .people-wrapper p{
   text-align: center;
@@ -211,6 +219,15 @@ footer p{
   .family .people-wrapper{
     margin-bottom: 50px;
   }
+
+  .modal .modal-dialog {
+    width:95%;
+  }
+  .modal-body .bio-data{
+    font-size: 1.5rem;
+    margin:10px;
+  }
+
   .pic-container{
     padding: 20px 10px 50px 10px;
   }
