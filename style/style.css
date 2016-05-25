@@ -88,6 +88,9 @@ html,body{
 .family .people-wrapper .profile-pic:hover{
   height:200px;
 }
+.family .people-wrapper .main-pic:hover{
+  height:250px;
+}
 
  .family .people-wrapper .profile-pic{
   border-radius: 50%;
@@ -98,6 +101,13 @@ html,body{
       -o-transition: all 0.5s ease;
      -ms-transition: all 0.5s ease;
          transition: all 0.5s ease;
+}
+
+.family .people-wrapper .main-pic{
+  height:200px;
+}
+.family .people-wrapper .secondary-pic{
+  margin-top: 50px;
 }
 .modal .modal-dialog {
   width:75%;
@@ -110,6 +120,7 @@ html,body{
  border-radius: 50%;
  height:200px;
 }
+
 
 .modal-body p{
   font-family: 'Slabo 27px', serif;
@@ -213,11 +224,15 @@ footer p{
 
   .family{
     padding: 10px 20px 30px 20px;
-    height:900px;
+    height:1000px;
   }
 
   .family .people-wrapper{
     margin-bottom: 50px;
+  }
+
+  .family .people-wrapper .secondary-pic{
+    margin-top: 0;
   }
 
   .modal .modal-dialog {
