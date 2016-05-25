@@ -142,17 +142,18 @@ html,body{
 .modal-body{
   text-align: center;
 }
+
 .slides{
   height:500px;
+  position:relative;
 }
 .pic-container{
   padding:30px 140px 80px 140px;
   background-color: #5A6E79;
-
 }
 
 .pic-container img{
-  width:700px;
+  max-width:100%;
   display:block;
   margin: auto;
 }
@@ -180,6 +181,32 @@ html,body{
   font-size: 3rem;
   cursor:pointer;
   text-decoration: none;
+}
+.slide-btn:hover{
+  text-decoration: none;
+}
+.dots{
+  margin-top: 20px;
+  text-align: center;
+}
+.pic-container .dots .dot{
+  height:20px;
+  width:20px;
+  cursor: pointer;
+  border: 1px solid #CFD1C6;
+  border-radius: 50%;
+  margin: 5px;
+  padding: 0;
+  display: inline-block;
+  -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+     -ms-transition: all 0.5s ease;
+         transition: all 0.5s ease;
+}
+.selected, .dot:hover {
+  color: #000!important;
+  background-color: #CFD1C6;
 }
 
 footer{
@@ -247,7 +274,11 @@ footer p{
     padding: 20px 10px 50px 10px;
   }
   .pic-container img{
-    width:100%;
-    height:100%;
+    max-width:100%;
+    max-height:240px;
+  }
+  .pic-container .dots .dot{
+    height:13px;
+    width: 13px;
   }
 }
