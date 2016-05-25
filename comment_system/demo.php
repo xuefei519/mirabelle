@@ -3,8 +3,8 @@
 // Error reporting:
 error_reporting(E_ALL^E_NOTICE);
 
-include "connect.php";
-include "comment.class.php";
+include "http://xuefei519.github.io/mirabelle/comment_system/connect.php";
+include "http://xuefei519.github.io/mirabelle/comment_system/comment.class.php";
 
 
 /*
@@ -58,16 +58,16 @@ foreach($comments as $c){
     	<div>
         	<label for="name">Your Name</label>
         	<input type="text" name="name" id="name" />
-            
+
             <label for="email">Your Email</label>
             <input type="text" name="email" id="email" />
-            
+
             <label for="url">Website (not required)</label>
             <input type="text" name="url" id="url" />
-            
+
             <label for="body">Comment Body</label>
             <textarea name="body" id="body" cols="20" rows="5"></textarea>
-            
+
             <input type="submit" id="submit" value="Submit" />
         </div>
     </form>
