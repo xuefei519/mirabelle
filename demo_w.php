@@ -3,8 +3,8 @@
 // Error reporting:
 error_reporting(E_ALL^E_NOTICE);
 
-include "connect.php";
-include "comment.class.php";
+include "http://xuefei519.github.io/mirabelle/comment_system/connect.php";
+include "http://xuefei519.github.io/mirabelle/comment_system/comment.class.php";
 
 
 /*
