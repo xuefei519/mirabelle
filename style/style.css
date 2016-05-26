@@ -210,7 +210,12 @@ html,body{
 }
 .comment{
   background-color: #ADB3B1;
-  margin:50px;
+  color: #5A6E79;
+  padding:50px;
+  font-family: 'Slabo 27px', serif;
+}
+.comment h1{
+  font-family: 'Abril Fatface', cursive;
 }
 footer{
   background-color: #B56C63
