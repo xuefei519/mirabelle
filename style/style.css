@@ -208,7 +208,10 @@ html,body{
   color: #000!important;
   background-color: #CFD1C6;
 }
-
+.comment{
+  background-color: #ADB3B1;
+  margin:50px;
+}
 footer{
   background-color: #B56C63
 
