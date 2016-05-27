@@ -1,52 +1,218 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
-<html onload="WeixinJSBridgeReady">
+<html >
   <head>
     <meta charset="utf-8">
-=======
-<html>
-    <head>
-        <meta charset="utf-8">
->>>>>>> e78054d55b50132ab6bcbe10a456d50b395dc611
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, minimum-scale=1,user-scalable=no">
+
 
         <link rel="icon" href="images/nyan.png">
 
         <link href="style/style.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link href="style/bootstrap.css" rel="stylesheet">
+
         <!--font!-->
         <link href='https://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
-
-<<<<<<< HEAD
-    <title>Mirabelle's Page</title>
-  </head>
-  <body>
-    <h1>Mirabelle</h1>
-    <img src="images/pic1.jpg" alt="My test image">
-    <h2>Who is Mirabelle?</h2>
-
-    <ul>
-      <li>a cat</li>
-      <li>a friend</li>
-      <li>a family member</li>
-    </ul>
-
-    <script src="scripts/main.js"></script>
-  </body>
-=======
+        <link href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css'>
         <title>Mirabelle's Page</title>
     </head>
     <body>
-        <div style='margin:0 auto;width:0px;height:0px;overflow:hidden;'>
-            <img src="images/pic0.jpg" width='500'>
-        </div>
-        <h1>Mirabelle</h1>
-        <img id="slides" src="images/pic0.jpg" height='500' alt="Oops...">
+      <div class="header" id="home">
+        <!--For display on wechat share!-->
+        <img src="images/pic4.jpg" style='margin:0 auto;width:0px;height:0px;overflow:hidden;'>
+            <h1>Mirabelle</h1>
+            <p>A beloved indoor pet cat</p>
+            <div class="nav-bar-links">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mobile-nav">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+
+              <div id="mobile-nav" class="collapse">
+                <a class="nav-bar-link" href="#home">Home</a>
+                <a class="nav-bar-link" href="#who">Who is Mirabelle</a>
+                <a class="nav-bar-link" href="#family">The family</a>
+                <a class="nav-bar-link" href="#galerie">Galerie</a>
+                <a class="nav-bar-link" href="#comment">Comment</a>
+              </div>
+
+              <div class="collapse navbar-collapse" >
+                <a class="nav-bar-link" href="#home">Home</a>
+                <span class="divider">|</span>
+                <a class="nav-bar-link" href="#who">Who is Mirabelle</a>
+                <span class="divider">|</span>
+                <a class="nav-bar-link" href="#family">The family</a>
+                <span class="divider">|</span>
+                <a class="nav-bar-link" href="#galerie">Galerie</a>
+                <span class="divider">|</span>
+                <a class="nav-bar-link" href="#comment">Comment</a>
+            </div>
+            </div>
+      </div>
+      <section class="who" id="who">
         <h2>Who is Mirabelle?</h2>
-        <ul>
-            <li>a cat</li>
-            <li>a friend</li>
-            <li>a family member</li>
-        </ul>
+        <h3>Mirabelle is a 2-year-old female cat, probably a Russian Blue mix.
+          She came to the family in February 2015, now she is a principal member of the family.</h3>
+        <h4>Mirabelle is not just another cat, she is curious, cautious and active, she loves to play and go out. She is dependent and needs personal space as well. She is a keeper.</h4>
+      </section>
+
+        <section class="family" id="family">
+          <h1>The family</h1>
+          <div class="row">
+
+            <div class="col-lg-4 col-sm-3 people-wrapper">
+              <a href=# data-target="#tsing-bio" data-toggle="modal" data-backdrop="static">
+                <img class="profile-pic secondary-pic" src="images/tsing.jpg" alt="Tsing">
+                <p>Tsing</p>
+              </a>
+            </div>
+            <div class="col-lg-4 col-sm-3 people-wrapper">
+              <a href=# data-target="#mirabelle-bio" data-toggle="modal" data-backdrop="static">
+                <img class="profile-pic main-pic" src="images/pic7.jpg" alt="Mirabeller">
+                <p>Mirabelle</p>
+              </a>
+            </div>
+            <div class="col-lg-4 col-sm-3 people-wrapper">
+              <a href=# data-target="#shino-bio" data-toggle="modal" data-backdrop="static">
+                <img class="profile-pic secondary-pic" src="images/shino.jpg" alt="Shino">
+                <p>Shino</p>
+              </a>
+              </div>
+
+          </div>
+        </section>
+
+        <div class="modal fade" id="tsing-bio" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                <button type="button" id="close" class="close" data-dismiss="modal" >&times;</button>
+                <img class="profile-pic" src="images/tsing.jpg" alt="Tsing">
+                <p class="modal-title">Tsing Gu</p>
+                <p class="bio-data">Tsing is a true cat lover, he has shown a great affection for cats since a very young age, or I would rather say that his liking for them is more like an instinct.
+                <br>Unlike those who are attracted only by the cute appearance, Tsing's affection is sincere. Every day he spends time playing with Mirabelle, he tries to understand her behaviors, her feelings,
+                and her needs. He makes sure that everything is good for her: he cleans the toilet every single morning, he always keeps an eye on her bowl in case it is going to be empty soon, and most important, he respects her nature and never forces her to do anything against her will.
+                <br>If you have a pet cat then you must know that pain is inevitable, Tsing is no exception, he got all these scratches while playing with Mirabelle or trying to trim her nails. Those scratches, however painful they were, never
+                get in the way of his love, his pure, gentle and unconditional love.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="mirabelle-bio" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+          <div class="modal-dialog work-modal">
+            <div class="modal-content">
+              <div class="modal-body">
+                <button type="button" id="close" class="close" data-dismiss="modal" >&times;</button>
+                <img class="profile-pic" src="images/pic7.jpg" alt="Mirabelle">
+                <p class="modal-title">Mirabelle</p>
+                <p class="bio-data">Mirabelle the cat, aka <em>'Mimi'</em>, considers herself as the master of the family. It is true that she is the one
+                  that stays at home for the most of the time, and she is familiar with every single corner, especially those the others cannot reach to.
+                  <br>Mirabelle has zero tolerance for strangers, she sees them as <em>'intruders'</em>, for those of her size, she throws hisses at them; and for those of
+                  much bigger size, she would hide from them. But once you get to know her (which requires much time), she would disguise herself as a cute and innocent cat.
+                  <br>Just like other cats, Mirabelle has a crazy fondness for warm sunshine, every afternoon she lies on the carpet let the sunshine cover her whole body except her head,
+                  which is always beneath the sofa. She has her own way of weird, aren't we all? She enjoys being alone and yet not hiding the fact that she needs company sometimes as well.
+                  She never hides her desire or fakes anything, she is true to herself, deep down in her heart, she never forgets that she is a predator and was born to rule.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="shino-bio" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+          <div class="modal-dialog work-modal">
+            <div class="modal-content">
+              <div class="modal-body">
+                <button type="button" id="close" class="close" data-dismiss="modal" >&times;</button>
+                <img class="profile-pic" src="images/shino.jpg" alt="Shino">
+                <p class="modal-title">Shino Shi</p>
+                <p class="bio-data">Even though after all these years living with Mirabelle the cat, this girl still considers herself as a dog person. For
+                  a girl sensitive and insecure as Shino is, there is nothing wrong for her to want a pet to be loyal and supportive.
+                  <br>However, Mirabelle would never come to this family if it were not Shino who contacted her former-owners (a nice couple but sadly the boyfriend was
+                  suffering from allergy) for adoption. She tried to develop a close relationship with Mirabelle at the very beginning, but before long did she realize that
+                  things didn't work out the way she wanted: a cat can never be a dog, at least not for Mirabelle.
+                  <br>Currently, these two girls are keeping a healthy relationship, Shino has been holding back the urge to physically touch or binding emotionally with
+                  Mirabelle. And she is the one with clear mind and tries to prevent Tsing from spoiling Mirabelle, she made rules like <em>'No balcony activities after sundown'</em>,
+                  <em>'Catmint once a week maximum'</em> and etc. She voluntarily plays the 'bad cop' just so she could protect Mirabelle even though she knows this can make the cat like her
+                  less. And nobody says it is easy.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section class="pic-container" id="galerie">
+          <h1>Galerie</h1>
+          <div class="row">
+          <div class="col-lg-10 col-lg-offset-1 col-sm-12">
+            <img class="slides" src="images/slide_show/pic0.jpg" alt="Oops...">
+            <img class="slides" src="images/slide_show/pic1.jpg" alt="Oops...">
+            <img class="slides" src="images/slide_show/pic2.jpg" alt="Oops...">
+            <img class="slides" src="images/slide_show/pic3.jpg" alt="Oops...">
+            <img class="slides" src="images/slide_show/pic4.jpg" alt="Oops...">
+            <img class="slides" src="images/slide_show/pic5.jpg" alt="Oops...">
+          <a class="slide-btn btn-left" onclick="plusDivs(-1)">&#10094;</a>
+          <a class="slide-btn btn-right" onclick="plusDivs(+1)">&#10095;</a>
+          <div class="dots">
+
+            <span class="dot" onclick="currentDiv(1)"></span>
+            <span class="dot" onclick="currentDiv(2)"></span>
+            <span class="dot" onclick="currentDiv(3)"></span>
+            <span class="dot" onclick="currentDiv(4)"></span>
+            <span class="dot" onclick="currentDiv(5)"></span>
+            <span class="dot" onclick="currentDiv(6)"></span>
+
+<<<<<<< HEAD
+=======
+        </div>
+        </div>
+>>>>>>> 1c71407c2711bd27ae635a4465ae827889a04526
+          </div>
+          </div>
+        </div>
+        </section>
+        <section class="comment" id="comment">
+          <h1>Comments</h1>
+          <div id="disqus_thread"></div>
+<script>
+/**
+* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+*/
+
+var disqus_config = function () {
+this.page.url = "http://xuefei519.github.io/mirabelle"; // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+
+s.src = '//page4mirabelle.disqus.com/embed.js';
+
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+        </section>
+        <footer>
+          <p>All rights reserved. Mirabelle &copy; 2016</p>
+        </footer>
+
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
         <script src="scripts/main.js"></script>
+        <!-- Plugin JavaScript -->
+        <script src="scripts/jquery.easing/jquery.easing.1.3.min.js"></script>
+        <!-- Bootstrap Core JavaScript -->
+        <script src="scripts/bootstrap.min.js"></script>
+        <!--disqus!-->
+        <script id="dsq-count-scr" src="//page4mirabelle.disqus.com/count.js" async></script>
+
     </body>
->>>>>>> e78054d55b50132ab6bcbe10a456d50b395dc611
 </html>
