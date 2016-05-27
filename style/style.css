@@ -222,7 +222,10 @@ html,body{
   text-align:center;
   margin-bottom: 30px;
 }
-
+#slide-show{
+  max-width: 800px;
+  margin:auto;
+}
 .btn-left{
   float:left!important;
 }
