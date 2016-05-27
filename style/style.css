@@ -43,7 +43,7 @@ html,body{
   left:0;
   margin-left: 20px;
   position:absolute;
-  border:1px solid #5A6E79;
+  border:1px solid #CFD1C6;
 }
 
 #mobile-nav{
@@ -58,7 +58,7 @@ html,body{
 }
 
 .nav-bar-links .navbar-toggle .icon-bar{
-  border:1px solid #5A6E79;
+  border:1px solid #CFD1C6;
 }
 .nav-bar-links a,
 .nav-bar-links a:visited{
