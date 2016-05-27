@@ -37,6 +37,21 @@ myButton.onclick=function(){
   setName();
 }*/
 
+$(function() {
+    $('body').on('click', '.nav-bar-link', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    });
+});
+
+// Closes the Responsive Menu on Menu Item Click
+$('#mobile-nav a').click(function() {
+    $('.navbar-toggle:visible').click();
+});
+
 var slideIndex = 1;
 showDivs(slideIndex);
 

@@ -18,21 +18,49 @@
         <title>Mirabelle's Page</title>
     </head>
     <body>
-      <div class="header">
+      <div class="header" id="home">
         <!--For display on wechat share!-->
         <img src="images/pic4.jpg" style='margin:0 auto;width:0px;height:0px;overflow:hidden;'>
             <h1>Mirabelle</h1>
             <p>A beloved indoor pet cat</p>
+            <div class="nav-bar-links">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mobile-nav">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
 
+              <div id="mobile-nav" class="collapse">
+                <a class="nav-bar-link" href="#home">Home</a>
+                <a class="nav-bar-link" href="#who">Who is Mirabelle</a>
+                <a class="nav-bar-link" href="#family">The family</a>
+                <a class="nav-bar-link" href="#galerie">Galerie</a>
+                <a class="nav-bar-link" href="#comment">Comment</a>
+              </div>
+
+              <div class="collapse navbar-collapse" >
+                <a class="nav-bar-link" href="#home">Home</a>
+                <span class="divider">|</span>
+                <a class="nav-bar-link" href="#who">Who is Mirabelle</a>
+                <span class="divider">|</span>
+                <a class="nav-bar-link" href="#family">The family</a>
+                <span class="divider">|</span>
+                <a class="nav-bar-link" href="#galerie">Galerie</a>
+                <span class="divider">|</span>
+                <a class="nav-bar-link" href="#comment">Comment</a>
+            </div>
+            </div>
       </div>
-      <section class="who">
+      <section class="who" id="who">
         <h2>Who is Mirabelle?</h2>
         <h3>Mirabelle is a 2-year-old female cat, probably a Russian Blue mix.
           She came to the family in February 2015, now she is a principal member of the family.</h3>
         <h4>Mirabelle is not just another cat, she is curious, cautious and active, she loves to play and go out. She is dependent and needs personal space as well. She is a keeper.</h4>
       </section>
 
-        <section class="family">
+        <section class="family" id="family">
           <h1>The family</h1>
           <div class="row">
 
@@ -117,7 +145,7 @@
           </div>
         </div>
 
-        <section class="pic-container">
+        <section class="pic-container" id="galerie">
           <h1>Galerie</h1>
           <div class="row">
           <div class="col-lg-10 col-lg-offset-1 col-sm-12">
@@ -142,7 +170,7 @@
           </div>
         </div>
         </section>
-        <section class="comment">
+        <section class="comment" id="comment">
           <h1>Comments</h1>
           <div id="disqus_thread"></div>
 <script>
@@ -174,6 +202,8 @@ s.setAttribute('data-timestamp', +new Date());
         <!-- jQuery -->
         <script src="https://code.jquery.com/jquery-2.2.2.min.js"></script>
         <script src="scripts/main.js"></script>
+        <!-- Plugin JavaScript -->
+        <script src="scripts/jquery.easing/jquery.easing.1.3.min.js"></script>
         <!-- Bootstrap Core JavaScript -->
         <script src="scripts/bootstrap.min.js"></script>
         <!--disqus!-->

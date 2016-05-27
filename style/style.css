@@ -32,6 +32,60 @@ html,body{
   text-align: center;
   position: relative;
 }
+.nav-bar-links{
+  font-family: 'Slabo 27px', serif;
+  text-align: center;
+  font-size: 2.5rem;
+  color:#CFD1C6;
+}
+.nav-bar-links .navbar-toggle{
+  top:0;
+  left:0;
+  margin-left: 20px;
+  position:absolute;
+  border:1px solid #5A6E79;
+}
+
+#mobile-nav{
+  position: absolute;
+  left:0;
+  top:0;
+  margin-top: 50px;
+  background-color: #5A6E79;
+}
+#mobile-nav .nav-bar-link{
+  display: block;
+}
+
+.nav-bar-links .navbar-toggle .icon-bar{
+  border:1px solid #5A6E79;
+}
+.nav-bar-links a,
+.nav-bar-links a:visited{
+  color:#CFD1C6;
+  text-decoration: none;
+  margin:10px;
+}
+
+
+.nav-bar-links a:hover,
+.nav-bar-links a:active{
+  text-decoration: none;
+  color:#B56C63;
+  text-shadow: 1px 1px 1px #5A6E79;
+}
+
+
+
+.nav-bar-links a:link{
+  text-decoration: none;
+}
+
+@media(max-width:768px){
+  .nav-bar-links{
+    font-size: 2rem;
+  }
+}
 
 .who{
   background-color: #CFD1C6;
