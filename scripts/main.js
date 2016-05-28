@@ -37,6 +37,12 @@ myButton.onclick=function(){
   setName();
 }*/
 
+	// Wait for window load
+	$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut();
+	});
+
 $(function() {
     $('body').on('click', '.nav-bar-link', function(event) {
         var $anchor = $(this);
