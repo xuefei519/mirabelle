@@ -327,10 +327,14 @@ footer p{
     font-size: 2rem;
   }
 
-  .family,
-  #friends{
+  .family{
     padding: 10px 20px 30px 20px;
     height:1000px;
+  }
+
+  #friends{
+    padding: 10px 20px 30px 20px;
+    height:500px;
   }
 
   .family .people-wrapper{
