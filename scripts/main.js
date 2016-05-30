@@ -58,6 +58,14 @@ $('#mobile-nav a').click(function() {
     $('.navbar-toggle:visible').click();
 });
 
+
+$('.translate').click(function(){
+  $('.bio-data').toggleClass("EN CN");
+  $(this).html($(this).html() == "English" ? "中文" : "English");
+  e.preventDefault();
+});
+
+
 var slideIndex = 1;
 showDivs(slideIndex);
 

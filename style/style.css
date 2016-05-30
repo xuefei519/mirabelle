@@ -201,6 +201,24 @@ html,body{
   text-align: left;
   margin: 20px;
 }
+.modal-body .CN{
+  display:none;
+}
+.modal-body .translate,
+.modal-body .translate:active,
+.modal-body .translate:visited,
+.modal-body .translate:focus{
+  background-color: #5A6E79;
+  font-family: 'Slabo 27px', serif;
+  font-size: 2rem;
+  color:#CFD1C6;
+}
+
+.modal-body .translate:hover{
+  color:#5A6E79;
+  background-color: #CFD1C6;
+}
+
 .family .people-wrapper p{
   text-align: center;
   font-family: 'Slabo 27px', serif;
