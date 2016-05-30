@@ -384,6 +384,11 @@ footer p{
     margin:10px;
   }
 
+  .modal-body .translate:hover{
+    color:#CFD1C6;
+    background-color: #5A6E79;
+  }
+
   .pic-container{
     padding: 20px 10px 50px 10px;
   }
