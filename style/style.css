@@ -204,6 +204,10 @@ html,body{
 .modal-body .CN{
   display:none;
 }
+
+.modal-body .toEN{
+  display:none;
+}
 .modal-body .translate,
 .modal-body .translate:active,
 .modal-body .translate:visited,
