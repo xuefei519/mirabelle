@@ -245,17 +245,19 @@ html,body{
   color:#5A6E79;
 }
 
-.slides{
+.slides img{
+  padding:0;
   height:500px;
   position:relative;
 }
 .pic-container{
-  padding:30px 140px 80px 140px;
+  padding:30px 0px 80px 0px;
   background-color: #5A6E79;
 }
 
 .pic-container img{
-  max-width:100%;
+  max-width:80%;
+  max-height:600px;
   display:block;
   margin: auto;
 }
@@ -271,14 +273,18 @@ html,body{
   margin-bottom: 30px;
 }
 #slide-show{
-  max-width: 800px;
+  max-width: 100%;
   margin:auto;
 }
 .btn-left{
-  float:left!important;
+  position:absolute;
+  top:40%;
+  left:5%;
 }
 .btn-right{
-  float:right!important;
+  position:absolute;
+  top:40%;
+  right:5%;
 }
 
 .slide-btn{
@@ -394,8 +400,16 @@ footer p{
   }
 
   .pic-container{
-    padding: 20px 10px 50px 10px;
+    padding: 20px 0px 50px 0px;
   }
+
+
+  .slides img{
+    padding:0;
+    max-height:240px;
+    position:relative;
+  }
+
   .pic-container img{
     max-width:100%;
     max-height:240px;
