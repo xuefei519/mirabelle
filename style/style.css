@@ -23,7 +23,7 @@ html,body{
 }
 
 .header{
-  min-height:100vh;
+  height:100vh;
   background-image: url("../images/pic6.jpg");
   background-size:cover;
   background-position: center center;
@@ -101,7 +101,12 @@ html,body{
   }
 }
 section:not(.comment){
+  text-align: center;
+  vertical-align:middle;
+  display: inline-block;
   min-height:100vh;
+  width: 100vw;
+
 }
 .who{
   background-color: #CFD1C6;
@@ -357,7 +362,7 @@ footer p{
   }
 
   .who{
-    padding: 10px 20px 30px 20px;
+    padding: 70px 20px 30px 20px;
   }
 
   .who h2{
@@ -377,7 +382,7 @@ footer p{
   }
 
   #friends{
-    padding: 10px 20px 30px 20px;
+    padding: 70px 20px 30px 20px;
     height:500px;
   }
 
@@ -403,7 +408,7 @@ footer p{
   }
 
   .pic-container{
-    padding: 20px 0px 50px 0px;
+    padding: 90px 0px 50px 0px;
   }
 
 
